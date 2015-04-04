@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var bower = require('bower');
@@ -10,6 +12,8 @@ var bowerFiles = require('main-bower-files');
 var inject = require('gulp-inject');
 var angularFilesort = require('gulp-angular-filesort');
 var es = require('event-stream');
+var _ = require('lodash');
+var karma = require('karma').server;
 
 var paths = {
   sass: ['./scss/**/*.scss']
@@ -71,6 +75,18 @@ gulp.task('build', function () {
       }))
       .pipe(gulp.dest('./www'));
 
+});
+
+/**
+ * Test task, run test once and exit
+ */
+gulp.task('test', function(done) {
+  karma.start({
+    configFile: __dirname + '/my.conf.js',
+    singleRun: true
+  }, function() {
+    done();
+  });
 });
 
 gulp.task('git-check', function(done) {

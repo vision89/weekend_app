@@ -4,6 +4,6 @@
 /**
  * Town controller
  */
-angular.module( 'townMod').controller( 'townController', ['$scope', function ( $scope ) {
+angular.module( 'sceneMod' ).controller( 'townController', ['$scope', function ( $scope ) {
 
 }]);
