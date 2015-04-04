@@ -6,6 +6,10 @@ var sass = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
+var bowerFiles = require('main-bower-files');
+var inject = require('gulp-inject');
+var angularFilesort = require('gulp-angular-filesort');
+var es = require('event-stream');
 
 var paths = {
   sass: ['./scss/**/*.scss']
@@ -34,6 +38,38 @@ gulp.task('install', ['git-check'], function() {
     .on('log', function(data) {
       gutil.log('bower', gutil.colors.cyan(data.id), data.message);
     });
+});
+
+//Adds proper dependencies to index
+gulp.task('build', function () {
+
+  //get css files
+  var cssFiles = gulp.src(['www/**/*.css']);
+
+  //get js files, be sure to sort for angular
+  var jsFiles =   //include all the js files, ignore test files
+      gulp.src([
+        'www/**/*.js',
+        '!www/**/*-test.js',
+        '!www/**/*.test.js'])
+          .pipe(angularFilesort());
+
+
+  //upload files into index.html page
+  gulp.src('./wwww/index.html')
+      .pipe(inject(gulp.src(bowerFiles(), {read: true}), {
+        name: 'bower',
+        addRootSlash: false,
+        relative: true
+      }))
+      .pipe(inject(es.merge(
+          cssFiles,
+          jsFiles), {
+        addRootSlash: false,
+        ignorePath: 'www'
+      }))
+      .pipe(gulp.dest('./wwww/js/app'));
+
 });
 
 gulp.task('git-check', function(done) {
