@@ -55,8 +55,9 @@ gulp.task('build', function () {
           .pipe(angularFilesort());
 
 
+
   //upload files into index.html page
-  gulp.src('./wwww/index.html')
+  gulp.src('./www/index.html')
       .pipe(inject(gulp.src(bowerFiles(), {read: true}), {
         name: 'bower',
         addRootSlash: false,
@@ -68,7 +69,7 @@ gulp.task('build', function () {
         addRootSlash: false,
         ignorePath: 'www'
       }))
-      .pipe(gulp.dest('./wwww/js/app'));
+      .pipe(gulp.dest('./www'));
 
 });
 
