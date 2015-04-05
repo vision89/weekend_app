@@ -5,7 +5,7 @@
 /**
  * Holds the functionality used by the views
  */
-angular.module( 'playerMod').factory( 'playerViewModel', ['playerData',
+angular.module( 'playerMod' ).factory( 'playerModel', ['playerData',
 
     function ( playerData ) {
 
@@ -13,6 +13,8 @@ angular.module( 'playerMod').factory( 'playerViewModel', ['playerData',
         var service = {};
 
         service.data = playerData();
+
+        service.events = [];
 
         /**
          * Returns true if the array contains the specified id

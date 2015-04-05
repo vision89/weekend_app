@@ -5,7 +5,7 @@
 /**
  * Player data model, this will be rafactored to talk to the db eventually
  */
-angular.module( 'playerMod' ).factory( 'playerData' [function () {
+angular.module( 'playerMod' ).factory( 'playerData', function () {
 
     //Get a new instance
     return function () {
@@ -28,4 +28,4 @@ angular.module( 'playerMod' ).factory( 'playerData' [function () {
 
     }
 
-}]);
+});

@@ -3,9 +3,9 @@
  * Created by Dustin on 4/4/2015.
  */
 
-describe( 'playerViewModel', function () {
+describe( 'playerModel', function () {
 
-    var playerViewModel;  //scope for tests
+    var playerModel;  //scope for tests
 
     beforeEach( module( 'playerMod', function( $provide) {
 
@@ -22,9 +22,9 @@ describe( 'playerViewModel', function () {
 
     beforeEach(
 
-        inject( function( _playerData_, _playerViewModel_ ) {
+        inject( function( _playerData_, _playerModel_ ) {
 
-            playerViewModel = _playerViewModel_;
+            playerModel = _playerModel_;
 
         })
 
@@ -33,19 +33,19 @@ describe( 'playerViewModel', function () {
 
     it( 'should have a player view model', function () {
 
-        expect( playerViewModel ).toBeDefined();
+        expect( playerModel ).toBeDefined();
 
     });
 
     it( 'should contain id', function () {
 
-        expect( playerViewModel.containsId( 3, [1,2,3,4,5] )).toBeTruthy();
+        expect( playerModel.containsId( 3, [1,2,3,4,5] )).toBeTruthy();
 
     });
 
     it( 'should not contain id', function () {
 
-        expect( playerViewModel.containsId( 3, [2,4,6,8,10] )).toBeFalsy();
+        expect( playerModel.containsId( 3, [2,4,6,8,10] )).toBeFalsy();
 
     });
 

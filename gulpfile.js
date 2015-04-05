@@ -50,10 +50,28 @@ gulp.task('build', function () {
   //get css files
   var cssFiles = gulp.src(['www/**/*.css']);
 
+  var libJsFiles =  //Include all the lib files
+    gulp.src([
+      'www/lib/**/*.js',
+      '!www/lib/**/*.min.js',
+      '!www/lib/ionic/**/*.js',
+      '!www/lib/angular/**/*.js'
+    ])
+        .pipe(angularFilesort());
+
+  var appJsFiles =  //Include all the js app files
+    gulp.src([
+        'www/js/**.*js',
+        '!www/js/app.js'
+    ])
+        .pipe(angularFilesort());
+
   //get js files, be sure to sort for angular
   var jsFiles =   //include all the js files, ignore test files
       gulp.src([
         'www/**/*.js',
+        '!www/js/**.*js',
+        '!www/lib/**/*.js',
         '!www/**/*-test.js',
         '!www/**/*.test.js'])
           .pipe(angularFilesort());
@@ -69,7 +87,9 @@ gulp.task('build', function () {
       }))
       .pipe(inject(es.merge(
           cssFiles,
-          jsFiles), {
+          appJsFiles,
+          jsFiles,
+          libJsFiles), {
         addRootSlash: false,
         ignorePath: 'www'
       }))

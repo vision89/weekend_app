@@ -4,4 +4,4 @@
 /**
  * Scene module
  */
-angular.module( 'sceneMod', []);
+angular.module( 'sceneMod', ['playerMod']);

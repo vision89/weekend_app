@@ -23,40 +23,36 @@
       <!-- cordova script (this will be a 404 during development) -->
       <script src="cordova.js"></script>
 
-    <!-- lodash -->
-    <script src="www/lib/ng-lodash/build/ng-lodash.min.js"></script>
-
       <!-- your app's js -->
       <script src="js/app.js"></script>
 
   </head>
 
-  <body ng-app="weekend_app">
+  <body ng-app="weekend_app" ng-cloak>
 
     <ion-nav-view>
 
     </ion-nav-view>
 
     <!-- bower:js -->
-    <script src="lib/lodash/lodash.js"></script>
-    <script src="lib/angular/angular.js"></script>
-    <script src="lib/ng-lodash/build/ng-lodash.js"></script>
     <!-- endinject -->
 
     <!-- inject:js -->
+    <script src="js/routes.js"></script>
+    <script src="js/event.constants.js"></script>
     <script src="scenes/scene.module.js"></script>
-    <script src="scenes/town/controllers/townController.js"></script>
+    <script src="scenes/town/services/modelviews/shrine.model.js"></script>
+    <script src="scenes/town/services/models/shrine.data.js"></script>
+    <script src="scenes/town/controllers/shrine.controller.js"></script>
     <script src="player/player.module.js"></script>
-    <script src="player/services/viewmodels/playerViewModels.js"></script>
-    <script src="player/services/model/playerModel.js"></script>
-    <script src="lib/ng-lodash/build/ng-lodash.min.js"></script>
-    <script src="lib/ng-lodash/build/ng-lodash.js"></script>
-    <script src="lib/ionic/js/ionic.min.js"></script>
-    <script src="lib/ionic/js/ionic.js"></script>
-    <script src="lib/ionic/js/ionic.bundle.min.js"></script>
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
-    <script src="lib/ionic/js/ionic-angular.min.js"></script>
-    <script src="lib/ionic/js/ionic-angular.js"></script>
+    <script src="player/services/model/player.data.js"></script>
+    <script src="player/services/viewmodels/player.model.js"></script>
+    <script src="items/item.module.js"></script>
+    <script src="items/constants/weaponConstants.js"></script>
+    <script src="items/constants/shieldConstants.js"></script>
+    <script src="items/constants/inventoryConstants.js"></script>
+    <script src="items/constants/armorConstants.js"></script>
+    <script src="lib/angular-ui-router/src/common.js"></script>
     <script src="lib/angular-ui-router/src/viewScroll.js"></script>
     <script src="lib/angular-ui-router/src/viewDirective.js"></script>
     <script src="lib/angular-ui-router/src/view.js"></script>
@@ -67,29 +63,9 @@
     <script src="lib/angular-ui-router/src/stateDirectives.js"></script>
     <script src="lib/angular-ui-router/src/state.js"></script>
     <script src="lib/angular-ui-router/src/resolve.js"></script>
-    <script src="lib/angular-ui-router/src/common.js"></script>
-    <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="lib/lodash/lodash.min.js"></script>
-    <script src="lib/lodash/lodash.js"></script>
-    <script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
     <script src="lib/angular-sanitize/angular-sanitize.js"></script>
-    <script src="lib/angular-mocks/ngMockE2E.js"></script>
-    <script src="lib/angular-mocks/ngMock.js"></script>
-    <script src="lib/angular-mocks/ngAnimateMock.js"></script>
-    <script src="lib/angular-mocks/angular-mocks.js"></script>
-    <script src="lib/angular-animate/angular-animate.min.js"></script>
     <script src="lib/angular-animate/angular-animate.js"></script>
-    <script src="lib/angular/angular.min.js"></script>
-    <script src="lib/angular/angular.js"></script>
-    <script src="items/item.module.js"></script>
-    <script src="items/constants/weaponConstants.js"></script>
-    <script src="items/constants/shieldConstants.js"></script>
-    <script src="items/constants/inventoryConstants.js"></script>
-    <script src="items/constants/armorConstants.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/routes.js"></script>
-    <script src="js/eventConstants.js"></script>
     <!-- endinject -->
 
   </body>
