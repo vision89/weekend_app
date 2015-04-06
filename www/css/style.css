@@ -1,1 +1,34 @@
-/* Empty. Add your own CSS if you like */
+/* Padding */
+.padding-1 {
+
+    padding: 1%;
+
+}
+
+.top-padding-1 {
+
+    padding-top: 1%;
+
+}
+
+/* Margin */
+.top-margin-1 {
+
+    margin-top: 1%;
+
+}
+
+.top-margin-12 {
+
+    margin-top: 12%;
+
+}
+
+/* Fonts */
+.font-size-125 {
+
+    font-size: 125%;
+
+}
+
+

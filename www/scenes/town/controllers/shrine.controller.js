@@ -11,6 +11,7 @@ angular.module( 'sceneMod' ).controller( 'shrineController', ['$scope', 'playerM
         $scope.shrineModel = shrineModel;
         $scope.playerModel = playerModel;
         $scope.eventConstants = eventConstants;
+        $scope.platform = ionic.Platform.platform().toLowerCase();    //Get the device platform
 
     }
 
