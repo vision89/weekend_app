@@ -1,0 +1,82 @@
+<div class="bar bar-subfooter bar-calm auto-height">
+
+    <input ng-if="parse.platform !== 'android' && parse.platform !== 'ios'" class="center-elm text-center" type="text"
+           ng-model="action" style="width: 99.9%;font-size:2em;">
+
+    <input ng-if="parse.platform === 'android' || parse.platform === 'ios'" class="center-elm text-center" type="text"
+           ng-model="action" style="width: 99.9%;">
+
+</div>
+
+<div class="bar bar-footer bar-positive">
+
+    <div class="button-bar">
+
+        <button class="button" ng-click="buttonPressed( verbConstants.LOOK.id )" ng-disabled="parse.pair.showLook === false">
+
+            <span ng-if="parse.platform !== 'android' && parse.platform !== 'ios'" class="font-size-150">
+
+                Look
+
+            </span>
+
+            <span ng-if="parse.platform === 'android' || parse.platform === 'ios'">
+
+                Look
+
+            </span>
+
+        </button>
+
+
+        <button class="button" ng-click="buttonPressed( verbConstants.TAKE.id )" ng-disabled="parse.pair.showTake === false">
+
+            <span ng-if="parse.platform !== 'android' && parse.platform !== 'ios'" class="font-size-150">
+
+                Take
+
+            </span>
+
+            <span ng-if="parse.platform === 'android' || parse.platform === 'ios'">
+
+                Take
+
+            </span>
+
+        </button>
+
+        <button class="button" ng-click="buttonPressed( verbConstants.TALK.id )" ng-disabled="parse.pair.showTalk === false">
+
+            <span ng-if="parse.platform !== 'android' && parse.platform !== 'ios'" class="font-size-150">
+
+                Talk
+
+            </span>
+
+            <span ng-if="parse.platform === 'android' || parse.platform === 'ios'">
+
+                Talk
+
+            </span>
+
+        </button>
+
+        <button class="button" ng-click="buttonPressed( verbConstants.ATTACK.id )" ng-disabled="parse.pair.showAttack === false">
+
+            <span ng-if="parse.platform !== 'android' && parse.platform !== 'ios'" class="font-size-150">
+
+                Attack
+
+            </span>
+
+            <span ng-if="parse.platform === 'android' || parse.platform === 'ios'">
+
+                Attack
+
+            </span>
+
+        </button>
+
+    </div>
+
+</div>

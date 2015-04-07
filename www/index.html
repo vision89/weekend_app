@@ -32,11 +32,23 @@
 
     <ion-nav-view>
 
+      <!-- Header -->
       <div class="bar bar-header bar-positive">
 
-        <h1 class="title">Weekend App</h1>
+        <span class="title font-size-150">
+
+          <b>
+
+            Weekend App
+
+          </b>
+
+        </span>
 
       </div>
+
+      <!-- Footer including buttons and textfield -->
+      <actions></actions>
 
     </ion-nav-view>
 
@@ -70,6 +82,11 @@
     <script src="utility/utility.module.js"></script>
     <script src="utility/directives/welcome.directive.js"></script>
     <script src="parser/parser.module.js"></script>
+    <script src="parser/services/parser.service.js"></script>
+    <script src="parser/services/pair.service.js"></script>
+    <script src="parser/services/action.service.js"></script>
+    <script src="parser/constants/verb.constants.js"></script>
+    <script src="parser/constants/noun.constants.js"></script>
     <script src="parser/directives/actions.directive.js"></script>
     <script src="items/item.module.js"></script>
     <script src="items/constants/weaponConstants.js"></script>
