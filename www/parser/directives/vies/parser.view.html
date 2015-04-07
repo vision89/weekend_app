@@ -1,10 +1,16 @@
-<div class="bar bar-footer bar-positive" style="height: 15%;">
+<div class="bar bar-subfooter bar-balanced auto-height">
+
+    Hello
+
+</div>
+
+<div class="bar bar-footer bar-positivet">
 
     <div class="button-bar">
 
-        <button class="button" ng-click="lookPressed()" ng-disabled="showLook">
+        <button class="button" ng-click="lookPressed()" ng-disabled="showLook === false">
 
-            <div class="row" ng-if="platform !== 'android'">
+            <div class="row" ng-if="platform !== 'android' && platform !== 'ios'">
 
                 <img class="centerly" src="parser/assets/look.png" height="20%" width="20%" alt="Look" \>
 
@@ -16,28 +22,70 @@
 
                     Look
 
-            </span>
+                </span>
 
             </div>
 
         </button>
 
 
-        <button class="button" ng-click="takePressed()" ng-disabled="showTake">
+        <button class="button" ng-click="takePressed()" ng-disabled="showTake === false">
 
-            Take
+            <div class="row" ng-if="platform !== 'android' && platform !== 'ios'">
+
+                <img class="centerly" src="parser/assets/take.png" height="20%" width="20%" alt="Take" \>
+
+            </div>
+
+            <div class="row">
+
+                <span class="centerly font-size-150">
+
+                    Take
+
+                </span>
+
+            </div>
 
         </button>
 
-        <button class="button" ng-click="talkPressed()" ng-disabled="showTalk">
+        <button class="button" ng-click="talkPressed()" ng-disabled="showTalk === false">
 
-            Talk
+            <div class="row" ng-if="platform !== 'android' && platform !== 'ios'">
+
+                <img class="centerly" src="parser/assets/talk.png" height="20%" width="20%" alt="Talk" \>
+
+            </div>
+
+            <div class="row">
+
+                <span class="centerly font-size-150">
+
+                    Talk
+
+                </span>
+
+            </div>
 
         </button>
 
-        <button class="button" ng-click="attackPressed()" ng-disabled="showAttack">
+        <button class="button" ng-click="attackPressed()" ng-disabled="showAttack === false">
 
-            Attack
+            <div class="row" ng-if="platform !== 'android' && platform !== 'ios'">
+
+                <img class="centerly" src="parser/assets/attack.png" height="20%" width="20%" alt="Attack" \>
+
+            </div>
+
+            <div class="row">
+
+                <span class="centerly font-size-150">
+
+                    Attack
+
+                </span>
+
+            </div>
 
         </button>
 

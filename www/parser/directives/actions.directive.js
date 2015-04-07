@@ -5,13 +5,14 @@ angular.module( 'parser').directive( 'actions', [ 'eventConstants', function ( e
         restrict: 'E',
         templateUrl: 'parser/directives/vies/parser.view.html',
         scope: {
+            parser: '=parser', //Better be an array
+            platform: '=platform',
             showLook: '=showLook',
             showTake: '=showTake',
             showAttack: '=showAttack',
-            showTalk: '=showTalk',
-            platform: '=platform'
+            showTalk: '=showTalk'
         },
-        require: ['^=platform'],
+        require: ['^=paarser', '^=platform'],
         controller: ['$scope', function ( $scope ) {
 
             //Default scope values to true
@@ -48,7 +49,15 @@ angular.module( 'parser').directive( 'actions', [ 'eventConstants', function ( e
              */
             scope.lookPressed = function () {
 
-                scope.$broadcast( 'ActionClicked', eventConstants.LOOK );
+                if ( scope.parser[0] === eventConstants.LOOK ) {
+
+                    scope.parser[0] = 0;
+
+                } else {
+
+                    scope.parser[0] = eventConstants.LOOK;
+
+                }
 
             }
 
@@ -57,7 +66,15 @@ angular.module( 'parser').directive( 'actions', [ 'eventConstants', function ( e
              */
             scope.takePressed = function () {
 
-                scope.$broadcast( 'ActionClicked', eventConstants.TAKE );
+                if ( scope.parser[0] === eventConstants.TAKE ) {
+
+                    scope.parser[0] = 0;
+
+                } else {
+
+                    scope.parser[0] = eventConstants.TAKE;
+
+                }
 
             }
 
@@ -66,7 +83,15 @@ angular.module( 'parser').directive( 'actions', [ 'eventConstants', function ( e
              */
             scope.attackPressed = function () {
 
-                scope.$broadcast( 'ActionClicked', eventConstants.ATTACK );
+                if ( scope.parser[0] === eventConstants.ATTACK ) {
+
+                    scope.parser[0] = 0;
+
+                } else {
+
+                    scope.parser[0] = eventConstants.ATTACK;
+
+                }
 
             }
 
@@ -75,7 +100,15 @@ angular.module( 'parser').directive( 'actions', [ 'eventConstants', function ( e
              */
             scope.talkPressed = function () {
 
-                scope.$broadcast( 'ActionClicked', eventConstants.TALK );
+                if ( scope.parser[0] === eventConstants.TALK ) {
+
+                    scope.parser[0] = 0;
+
+                } else {
+
+                    scope.parser[0] = eventConstants.TALK;
+
+                }
 
             }
 

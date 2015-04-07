@@ -1,10 +1,10 @@
-<div class="bar bar-header bar-positive">
+<div class="bar bar-subheader bar-positive">
 
     <h1 class="title">The Empty Shrine</h1>
 
 </div>
 
-<ion-content padding="true" class="top-padding-1 text-center font-size-125">
+<ion-content padding="true" class="padding-top text-center has-header has-footer font-size-125">
 
     <!-- If the game has just started, display welcome message -->
     <div ng-if="playerModel.containsId( eventConstants.STARTED, playerModel.events ) === false">
@@ -13,7 +13,7 @@
 
     </div>
 
-    <div ng-class="{'top-margin-12': platform === 'android'}" class="padding-1">
+    <div ng-class="{'web-card-layout': platform !== 'android' && platform !== 'ios'}" class="padding">
 
         <!-- Shrine scenery -->
         <div class="card">
@@ -37,7 +37,7 @@
         <!-- display text related to each character -->
         <span ng-if="shrineModel.characters.length > 0">
 
-            <div ng-repeat="character in characters" class="card padding-1">
+            <div ng-repeat="character in characters" class="card padding">
 
                 <div class="item item-divider">
 
@@ -59,4 +59,4 @@
 
 </ion-content>
 
-<actions platform="platform"></actions>
+<actions platform="platform" show-take="false" show-attack="false"></actions>
