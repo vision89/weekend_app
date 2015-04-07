@@ -8,7 +8,7 @@ angular.module( 'utilityMod' ).directive( 'welcome', function () {
         controller: ['$scope', '$ionicModal', function ( $scope, $ionicModal ) {
 
             //The modal we will display
-            $ionicModal.fromTemplatUrl( 'www/utility/directives/views/welcome.view.html', {
+            $ionicModal.fromTemplateUrl( 'utility/directives/views/welcome.view.html', {
 
                 scope: $scope,
                 animation: 'slide-in-up'
@@ -17,24 +17,24 @@ angular.module( 'utilityMod' ).directive( 'welcome', function () {
 
                 $scope.modal = modal;
 
+                //Close the modal
+                $scope.closeModal = function () {
+
+                    $scope.modal.hide();
+
+                }
+
+                //Remove the modal from memory
+                $scope.$on( '$destroy', function () {
+
+                    $scope.modal.remove();
+
+                });
+
+                //Display the modal
+                $scope.modal.show();
+
             });
-
-            //Close the modal
-            $scope.closeModal = function () {
-
-                $scope.modal.hide();
-
-            }
-
-            //Remove the modal from memory
-            $scope.$on( '$destroy', function () {
-
-                $scope.modal.remove();
-
-            });
-
-            //Display the modal
-            $scope.modal.show();
 
         }]
 

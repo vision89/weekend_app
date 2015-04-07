@@ -13,45 +13,50 @@
 
     </div>
 
-    <!-- Shrine scenery -->
+    <div ng-class="{'top-margin-12': platform === 'android'}" class="padding-1">
 
-    <div class="card padding-1" ng-class="{'top-margin-12': platform === 'android'}">
-
-        <div class="item item-divider">
-
-            The Shrine
-
-        </div>
-
-        <div class="item item-text-wrap">
-
-            A large white multi columned structure stands next to an overlook.  Reliefs showing dieties
-            in various poses adorn the top of each column.  Two empty blocks stand in the center of
-            the shrine.
-
-        </div>
-
-    </div>
-
-    <!-- display text related to each character -->
-    <span ng-if="shrineModel.characters.length > 0">
-
-        <div ng-repeat="character in characters" class="card padding-1">
+        <!-- Shrine scenery -->
+        <div class="card">
 
             <div class="item item-divider">
 
-                {{character.title}}
+                The Shrine
 
             </div>
 
             <div class="item item-text-wrap">
 
-                {{character.message}}
+                A large white multi columned structure stands next to an overlook.  Reliefs showing dieties
+                in various poses adorn the top of each column.  Two empty blocks stand in the center of
+                the shrine.
 
             </div>
 
         </div>
 
-    </span>
+        <!-- display text related to each character -->
+        <span ng-if="shrineModel.characters.length > 0">
+
+            <div ng-repeat="character in characters" class="card padding-1">
+
+                <div class="item item-divider">
+
+                    {{character.title}}
+
+                </div>
+
+                <div class="item item-text-wrap">
+
+                    {{character.message}}
+
+                </div>
+
+            </div>
+
+        </span>
+
+    </div>
 
 </ion-content>
+
+<actions platform="platform"></actions>

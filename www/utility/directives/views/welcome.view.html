@@ -1,29 +1,25 @@
-<script id="welcome.view.html" type="text/ng-template">
+<ion-modal-view>
 
-    <ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-positive">
 
-        <ion-header-bar>
+        <h1 class="title text-center">
 
-            <h1 class="title">
+            The Adventure Begins!
 
-                The Adventure Begins!
+        </h1>
 
-            </h1>
+    </ion-header-bar>
 
-        </ion-header-bar>
+    <ion-content  padding="true" class="top-padding-1 text-center font-size-125">
 
-        <ion-content>
+        You begin your adventure at the shrine.  You are a lone wanderer from a faraway land.  You left home seeking adventure and here you may have found it!
 
-            You begin your adventure at the shrine.  You are a lone wanderer from a faraway land.  You left home seeking adventure and here you may have found it!
+        <div class="center top-padding-1">
 
-            <div class="center">
+            <button ng-click="closeModal()">Start the Adventure!</button>
 
-                <button ng-click="closeModal()">Start the Adventure!</button>
+        </div>
 
-            </div>
+    </ion-content>
 
-        </ion-content>
-
-    </ion-modal-view>
-
-</script>
+</ion-modal-view>
