@@ -47,4 +47,11 @@
 
 }
 
+/* Hover */
+.hover-card:hover {
+
+    box-shadow: 0 2px 4px rgba(56,126,245, 0.3);
+
+}
+
 
