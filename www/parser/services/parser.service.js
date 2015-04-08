@@ -2,7 +2,7 @@
 /**
  * Used by the actions directive to communicate with the controller
  */
-angular.module( 'parser').factory( 'parse', ['pair', 'parserActions', function ( pair, parserActions ) {
+angular.module( 'parser' ).factory( 'parse', ['pair', 'parserActions', function ( pair, parserActions ) {
 
     //Singleton
     var service = {};

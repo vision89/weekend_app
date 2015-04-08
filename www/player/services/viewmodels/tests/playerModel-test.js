@@ -1,8 +1,4 @@
 'use -strict';
-/**
- * Created by Dustin on 4/4/2015.
- */
-
 describe( 'playerModel', function () {
 
     var playerModel;  //scope for tests

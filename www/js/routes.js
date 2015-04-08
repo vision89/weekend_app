@@ -14,6 +14,14 @@ angular.module( 'weekend_app' )
             url: '/',
             templateUrl: 'scenes/town/controllers/views/shrine.view.html',
             controller: 'shrineController',
+            onEnter: ['parse', function ( parse ) {
+
+                parse.showLook =      true;
+                parse.showTake =      false;
+                parse.showAttack =    false;
+                parse.showTalk =      true;
+
+            }],
             onExit: ['playerModel', 'eventConstants', function ( playerModel, eventConstants ) {
 
                 //If we are leaving this controller and this is the first run, add the started event

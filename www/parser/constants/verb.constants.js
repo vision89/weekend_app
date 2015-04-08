@@ -2,7 +2,7 @@
 /**
  * Constants for parsing out verbs
  */
-angular.module( 'parser').constant( 'verbConstants', {
+angular.module( 'parser' ).constant( 'verbConstants', {
 
     LOOK:   { id: 1, text: 'Look' },
     TAKE:   { id: 2, text: 'Take' },

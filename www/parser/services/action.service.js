@@ -2,7 +2,7 @@
 /**
  * Used to perform functions on verb and noun constants
  */
-angular.module( 'parser').factory( 'parserActions', [ 'verbConstants', 'nounConstants',
+angular.module( 'parser' ).factory( 'parserActions', [ 'verbConstants', 'nounConstants',
     function ( verbConstants, nounConstants ) {
 
     //New instance
