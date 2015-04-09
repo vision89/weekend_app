@@ -5,8 +5,8 @@
  * Town controller
  */
 angular.module( 'sceneMod' ).controller( 'shrineController', ['$scope', 'playerModel', 'eventConstants', 'shrineModel',
-    'nounConstants', 'parse',
-    function ( $scope, playerModel, eventConstants, shrineModel, nounConstants, parse ) {
+    'nounConstants', 'parse', 'modalMaker', 'verbConstants',
+    function ( $scope, playerModel, eventConstants, shrineModel, nounConstants, parse, modalMaker, verbConstants ) {
 
         //Service bindings
         $scope.shrineModel = shrineModel;
@@ -29,6 +29,26 @@ angular.module( 'sceneMod' ).controller( 'shrineController', ['$scope', 'playerM
             }
 
         }
+
+        //Catch shrine related parse events
+        $scope.$on( 'ReadyToParse', function () {
+
+            //Look at shrine
+            if( parse.pair.verb === verbConstants.LOOK.id && parse.pair.noun === nounConstants.SHRINE.id ) {
+
+                modalMaker('scenes/town/controllers/views/look-shrine.view.html', $scope).then( function (modal) {
+
+                    modal.show();
+
+                });
+
+                //Reset the action
+                parse.pair.verb = 0;
+                parse.pair.noun = 0;
+
+            }
+
+        });
 
     }
 
