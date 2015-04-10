@@ -29,8 +29,8 @@ angular.module( 'characterMod' ).factory( 'characterData', ['nounConstants', 've
                 {
                     verb: verbConstants.TALK,
                     title: 'Talk to the Priest',
-                    content: 'Oh sir, oh sir!  It’s terrible, the statues of the great gods  Haymlin and Pendula have ' +
-                    'been stolen!  But how!?  There isn’t even a scratch on either stone which held them.  Please sir, please ' +
+                    content: 'Oh sir, oh sir!  It\'s terrible, the statues of the great gods  Haymlin and Pendula have ' +
+                    'been stolen!  But how!?  There isn\'t even a scratch on either stone which held them.  Please sir, please ' +
                     'find the culprit who did such a terrible thing to our beloved gods'
                 }];
 

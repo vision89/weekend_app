@@ -29,24 +29,46 @@ angular.module( 'sceneMod' ).controller( 'shrineController', ['$scope', 'playerM
 
         }
 
+        /**
+         * Reset the actions (verb/noun)
+         * @private
+         */
+        function _resetActions() {
+
+            parse.pair.verb = 0;
+            parse.pair.noun = 0;
+
+        }
+
+        /**
+         * Displays a generic modal with the given title/content
+         * @param title
+         * @param content
+         * @private
+         */
+        function _displayGenericModal( title, content ) {
+
+            $scope.title = title;
+            $scope.content = content;
+
+            modalMaker('utility/views/generic.modal.html', $scope).then( function ( modal ) {
+
+                modal.show();
+
+            });
+
+            //Reset the action
+            _resetActions()
+
+        }
+
         //Catch shrine related parse events
         $scope.$on( 'ReadyToParse', function () {
 
             //Look at shrine
             if ( parse.pair.verb === verbConstants.LOOK.id && parse.pair.noun === nounConstants.SHRINE.id ) {
 
-                $scope.title = 'Look at Shrine';
-                $scope.content = 'The two empty blocks show no signs of abuse.  Whatever monoliths they held were moved quite carefully.'
-
-                modalMaker('utility/views/generic.modal.html', $scope).then( function ( modal ) {
-
-                    modal.show();
-
-                });
-
-                //Reset the action
-                parse.pair.verb = 0;
-                parse.pair.noun = 0;
+                _displayGenericModal( 'Look at Shrine', 'The two empty blocks show no signs of abuse.  Whatever monoliths they held were moved quite carefully.' );
 
             } else if ( parse.pair.verb === verbConstants.LOOK.id && parse.pair.noun === nounConstants.PRIEST.id ) {
                 //Look Priest
@@ -57,26 +79,36 @@ angular.module( 'sceneMod' ).controller( 'shrineController', ['$scope', 'playerM
                 //If there were any values display the modal
                 if ( !angular.isUndefined( parsedValues ) ) {
 
-                    $scope.title = parsedValues.title;
-                    $scope.content = parsedValues.content;
+                    _displayGenericModal( parsedValues.title, parsedValues.content );
 
-                    modalMaker('utility/views/generic.modal.html', $scope).then( function ( modal ) {
-                        modal.show();
+                } else {
 
-                     });
+                    //Reset the action
+                    _resetActions()
 
                 }
 
-                //Reset the action
-                parse.pair.verb = 0;
-                parse.pair.noun = 0;
+            } else if ( parse.pair.verb === verbConstants.TALK.id && parse.pair.noun === nounConstants.PRIEST.id ) {
+                //Talk Priest
 
-            }
+                //Get the parse values
+                var parsedValues = $scope.characterService.getParsedValues( verbConstants.TALK.id, nounConstants.PRIEST.id );
 
-            else {
+                //If there were any values display the modal
+                if ( !angular.isUndefined( parsedValues ) ) {
 
-                parse.pair.verb = 0;
-                parse.pair.noun = 0;
+                    _displayGenericModal( parsedValues.title, parsedValues.content );
+
+                } else {
+
+                    //Reset the action
+                    _resetActions()
+
+                }
+
+            } else {
+
+                _resetActions()
 
             }
 
