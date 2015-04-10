@@ -49,39 +49,27 @@ angular.module( 'sceneMod' ).controller( 'shrineController', ['$scope', 'playerM
                 parse.pair.noun = 0;
 
             } else if ( parse.pair.verb === verbConstants.LOOK.id && parse.pair.noun === nounConstants.PRIEST.id ) {
+                //Look Priest
 
-                //I'm not a fan of this but I need to loop through my characters and actions to find the correct one
-                for ( var i = 0; i < $scope.characterService.data.characters.length; ++i ) {
+                //Get the parse values
+                var parsedValues = $scope.characterService.getParsedValues( verbConstants.LOOK.id, nounConstants.PRIEST.id );
 
-                    //Find the priest
-                    if ( $scope.characterService.data.characters[i].noun.id === nounConstants.PRIEST.id ) {
+                //If there were any values display the modal
+                if ( !angular.isUndefined( parsedValues ) ) {
 
-                        for ( var j = 0; j < $scope.characterService.data.characters[i].actions.length; ++j ) {
+                    $scope.title = parsedValues.title;
+                    $scope.content = parsedValues.content;
 
-                            if ( $scope.characterService.data.characters[i].actions[j].verb.id === verbConstants.LOOK.id ) {
+                    modalMaker('utility/views/generic.modal.html', $scope).then( function ( modal ) {
+                        modal.show();
 
-                                $scope.title = $scope.characterService.data.characters[i].actions[j].title;
-                                $scope.content = $scope.characterService.data.characters[i].actions[j].content;
-
-                                modalMaker('utility/views/generic.modal.html', $scope).then( function ( modal ) {
-
-                                    modal.show();
-
-                                });
-
-                                //Reset the action
-                                parse.pair.verb = 0;
-                                parse.pair.noun = 0;
-
-                                break;
-
-                            }
-
-                        }
-
-                    }
+                     });
 
                 }
+
+                //Reset the action
+                parse.pair.verb = 0;
+                parse.pair.noun = 0;
 
             }
 

@@ -20,6 +20,35 @@ angular.module( 'characterMod' ).factory( 'characterModel', ['characterData', fu
 
     }
 
+    /**
+     * Returns the parsed values needed by the modal after parsing
+     */
+    service.getParsedValues = function ( verb, noun ) {
+
+        //I'm not a fan of this but I need to loop through my characters and actions to find the correct one
+        for ( var i = 0; i < service.data.characters.length; ++i ) {
+
+            //Find the character
+            if ( service.data.characters[i].noun.id === noun ) {
+
+                for ( var j = 0; j < service.data.characters[i].actions.length; ++j ) {
+
+                    if ( service.data.characters[i].actions[j].verb.id === verb ) {
+
+                        return service.data.characters[i].actions[j];
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        return undefined;
+
+    }
+
     return service;
 
 }]);
