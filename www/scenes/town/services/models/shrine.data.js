@@ -4,7 +4,7 @@
 /**
  * Data for the town
  */
-angular.module( 'sceneMod').factory( 'shrineData', [function () {
+angular.module( 'sceneMod' ).factory( 'shrineData', [function () {
 
     //New instance
     return function() {
@@ -16,7 +16,7 @@ angular.module( 'sceneMod').factory( 'shrineData', [function () {
         service.characters = []; //Characters to display on page
 
         //Picture
-        service.templateUrl = 'www/scenes/town/assets/shrine.png';
+        service.templateUrl = 'scenes/town/assets/shrine.png';
 
         return service;
 

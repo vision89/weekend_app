@@ -14,6 +14,20 @@ angular.module( 'weekend_app' )
             url: '/',
             templateUrl: 'scenes/town/controllers/views/shrine.view.html',
             controller: 'shrineController',
+            resolve: {
+
+                characterService: ['characterModel', 'nounConstants', function ( characterModel, nounConstants ) {
+
+                    //Clear the characters then load them with shrine characters
+                    characterModel.data.characters = [];
+
+                    characterModel.getCharacters( nounConstants.SHRINE );
+
+                    return characterModel;
+
+                }]
+
+            },
             onEnter: ['parse', function ( parse ) {
 
                 parse.showLook =      true;
@@ -33,7 +47,6 @@ angular.module( 'weekend_app' )
                 }
 
             }]
-
         });
 
     });

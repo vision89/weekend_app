@@ -34,28 +34,57 @@
 
             <div class="item item-text-wrap">
 
-                A large white multi columned structure stands next to an overlook.  Reliefs showing dieties
-                in various poses adorn the top of each column.  Two empty blocks stand in the center of
-                the shrine.
+                <div class="row">
+
+                    <img class="center-elm" src="{{::shrineModel.data.templateUrl}}" alt="" style="height:10%;width:10%;" />
+
+                </div>
+
+                <div class="row text-center">
+
+                    <div class="padding">
+
+                        A large white multi columned structure stands next to an overlook.  Reliefs showing dieties
+                        in various poses adorn the top of each column.  Two empty blocks stand in the center of
+                        the shrine.
+
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
 
         <!-- display text related to each character -->
-        <span ng-if="shrineModel.characters.length > 0">
+        <span ng-if="characterService.data.characters.length > 0">
 
-            <div ng-repeat="character in characters" class="card padding">
+            <div ng-repeat="character in characterService.data.characters" class="card  hover-card"
+                 ng-click="cardClicked( character.noun.id )">
 
                 <div class="item item-divider">
 
-                    {{character.title}}
+                    {{::character.title}}
 
                 </div>
 
                 <div class="item item-text-wrap">
 
-                    {{character.message}}
+                    <div class="row">
+
+                        <img class="center-elm" ng-src="{{::character.templateUrl}}" alt="" style="height:10%;width:10%;" />
+
+                    </div>
+
+                    <div class="row text-center">
+
+                        <div class="padding">
+
+                            {{::character.description}}
+
+                        </div>
+
+                    </div>
 
                 </div>
 
