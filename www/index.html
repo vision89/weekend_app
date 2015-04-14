@@ -30,27 +30,11 @@
 
   <body ng-app="weekend_app" ng-cloak>
 
-    <ion-nav-view>
+    <!-- Header -->
+    <navigation-bar></navigation-bar>
 
-      <!-- Header -->
-      <div class="bar bar-header bar-positive">
-
-        <span class="title font-size-150">
-
-          <b>
-
-            Weekend App
-
-          </b>
-
-        </span>
-
-      </div>
-
-      <!-- Footer including buttons and textfield -->
-      <actions></actions>
-
-    </ion-nav-view>
+    <!-- Footer including buttons and textfield -->
+    <actions></actions>
 
     <!-- bower:js -->
     <!-- endinject -->
@@ -72,16 +56,16 @@
     <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="lib/angular-sanitize/angular-sanitize.js"></script>
     <script src="lib/angular-animate/angular-animate.js"></script>
-    <script src="characters/character.module.js"></script>
-    <script src="characters/services/models/character.data.js"></script>
-    <script src="characters/services/modelviews/character.model.js"></script>
     <script src="scenes/scene.module.js"></script>
     <script src="scenes/town/services/modelviews/shrine.model.js"></script>
     <script src="scenes/town/services/models/shrine.data.js"></script>
+    <script src="scenes/town/controllers/shrine.controller.js"></script>
     <script src="player/player.module.js"></script>
     <script src="player/services/viewmodels/player.model.js"></script>
     <script src="player/services/model/player.data.js"></script>
-    <script src="scenes/town/controllers/shrine.controller.js"></script>
+    <script src="characters/character.module.js"></script>
+    <script src="characters/services/modelviews/character.model.js"></script>
+    <script src="characters/services/models/character.data.js"></script>
     <script src="utility/utility.module.js"></script>
     <script src="utility/services/modalMaker.js"></script>
     <script src="utility/directives/welcome.directive.js"></script>
@@ -89,9 +73,10 @@
     <script src="parser/services/parser.service.js"></script>
     <script src="parser/services/pair.service.js"></script>
     <script src="parser/services/action.service.js"></script>
+    <script src="parser/directives/navigationBar.directive.js"></script>
+    <script src="parser/directives/actions.directive.js"></script>
     <script src="parser/constants/verb.constants.js"></script>
     <script src="parser/constants/noun.constants.js"></script>
-    <script src="parser/directives/actions.directive.js"></script>
     <script src="items/item.module.js"></script>
     <script src="items/constants/weaponConstants.js"></script>
     <script src="items/constants/shieldConstants.js"></script>

@@ -12,7 +12,7 @@
 
     <div class="button-bar">
 
-        <button class="button" ng-click="buttonPressed( verbConstants.LOOK.id )" ng-disabled="parse.showLook === false">
+        <button class="button button-clear" ng-click="buttonPressed( verbConstants.LOOK.id )" ng-disabled="parse.showLook === false">
 
             <span ng-if="parse.platform !== 'android' && parse.platform !== 'ios'" class="font-size-150">
 
@@ -29,7 +29,7 @@
         </button>
 
 
-        <button class="button" ng-click="buttonPressed( verbConstants.TAKE.id )" ng-disabled="parse.showTake === false">
+        <button class="button button-clear" ng-click="buttonPressed( verbConstants.TAKE.id )" ng-disabled="parse.showTake === false">
 
             <span ng-if="parse.platform !== 'android' && parse.platform !== 'ios'" class="font-size-150">
 
@@ -45,7 +45,7 @@
 
         </button>
 
-        <button class="button" ng-click="buttonPressed( verbConstants.TALK.id )" ng-disabled="parse.showTalk === false">
+        <button class="button button-clear" ng-click="buttonPressed( verbConstants.TALK.id )" ng-disabled="parse.showTalk === false">
 
             <span ng-if="parse.platform !== 'android' && parse.platform !== 'ios'" class="font-size-150">
 
@@ -61,7 +61,7 @@
 
         </button>
 
-        <button class="button" ng-click="buttonPressed( verbConstants.ATTACK.id )" ng-disabled="parse.showAttack === false">
+        <button class="button button-clear" ng-click="buttonPressed( verbConstants.ATTACK.id )" ng-disabled="parse.showAttack === false">
 
             <span ng-if="parse.platform !== 'android' && parse.platform !== 'ios'" class="font-size-150">
 
