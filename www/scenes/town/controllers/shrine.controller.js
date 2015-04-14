@@ -2,7 +2,7 @@
 /**
  * Town controller
  */
-angular.module( 'sceneMod' ).controller( 'shrineController', ['$scope', 'playerModel', 'eventConstants', 'shrineModel',
+angular.module( 'sceneMod' ).controller( 'ShrineController', ['$scope', 'playerModel', 'eventConstants', 'shrineModel',
     'nounConstants', 'parse', 'modalMaker', 'verbConstants', 'characterService',
     function ( $scope, playerModel, eventConstants, shrineModel, nounConstants, parse, modalMaker, verbConstants, characterService ) {
 

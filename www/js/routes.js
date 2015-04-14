@@ -13,7 +13,7 @@ angular.module( 'weekend_app' )
 
             url: '/',
             templateUrl: 'scenes/town/controllers/views/shrine.view.html',
-            controller: 'shrineController',
+            controller: 'ShrineController',
             resolve: {
 
                 characterService: ['characterModel', 'nounConstants', function ( characterModel, nounConstants ) {
@@ -47,6 +47,66 @@ angular.module( 'weekend_app' )
                 }
 
             }]
-        });
+        }).state( 'arena', {
+
+            url: '/arena',
+            templateUrl: 'scenes/town/controllers/views/arena.view.html',
+            controller: 'ArenaController'
+
+        }).state( 'magicians_corner', {
+
+            url: '/magicians-corner',
+            templateUrl: 'scenes/town/controllers/views/magiciansCorner.view.html',
+            controller: 'MagiciansCornerController'
+
+        }).state( 'shop', {
+
+            url: '/shop',
+            templateUrl: 'scenes/town/controllers/views/shop.view.html',
+            controller: 'ShopController'
+
+        }).state( 'bonfire', {
+
+            url: '/bonfire',
+            templateUrl: 'scenes/woods/controllers/views/bonfire.view.html',
+            controller: 'BonfireController'
+
+        }).state( 'drowned_sun', {
+
+            url: '/drowned-sun',
+            templateUrl: 'scenes/woods/controllers/views/drownedSun.view.html',
+            controller: 'DrownedSunController'
+
+        }).state( 'giants_in_the_sky', {
+
+            url: '/giants-in-the-sky',
+            templateUrl: 'scenes/woods/controllers/views/giantsInTheSky.view.html',
+            controller: 'GiantsInTheSkyController'
+
+        }).state( 'trees', {
+
+            url: '/trees',
+            templateUrl: 'scenes/woods/controllers/views/trees.view.html',
+            controller: 'TreesController'
+
+        }).state( 'gate', {
+
+            url: '/gate',
+            templateUrl: 'scenes/dungeon/controllers/views/gate.view.html',
+            controller: 'GateController'
+
+        }).state( 'lost_princess', {
+
+            url: '/lost-princess',
+            templateUrl: 'scenes/dungeon/controllers/views/lostPrincess.view.html',
+            controller: 'LostPrincessController'
+
+        }).state( 'dragons_layer', {
+
+            url: '/dragons-layer',
+            templateUrl: 'scenes/dungeon/controllers/views/dragonsLair.view.html',
+            controller: 'DragonsLairController'
+
+        })
 
     });

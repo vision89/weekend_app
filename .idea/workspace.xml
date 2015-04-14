@@ -2,8 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="789533fd-4ed0-467f-8b42-6fd89c4338a1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/parser/directives/views/navigation.view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/parser/directives/navigationBar.directive.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/town/controllers/arena.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/town/controllers/views/arena.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/woods/controllers/bonfire.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/woods/controllers/views/bonfire.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/dungeon/controllers/dragonsLair.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/dungeon/controllers/views/dragonsLair.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/woods/controllers/drownedSun.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/woods/controllers/views/drownedSun.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/dungeon/controllers/gate.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/dungeon/controllers/views/gate.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/woods/controllers/giantsInTheSky.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/woods/controllers/views/giantsInTheSky.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/dungeon/controllers/lostPrincess.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/dungeon/controllers/views/lostPrincess.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/town/controllers/magiciansCorner.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/town/controllers/views/magiciansCorner.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/town/controllers/shop.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/town/controllers/views/shop.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/woods/controllers/trees.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/scenes/woods/controllers/views/trees.view.html" />
       <change type="DELETED" beforePath="C:\Users\Dustin\Apps\weekend_app\www\lib\angular-mocks\.bower.json" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Dustin\Apps\weekend_app\www\lib\angular-mocks\README.md" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Dustin\Apps\weekend_app\www\lib\angular-mocks\angular-mocks.js" afterPath="" />
@@ -42,9 +60,10 @@
       <change type="DELETED" beforePath="C:\Users\Dustin\Apps\weekend_app\www\lib\ng-lodash\build\ng-lodash.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Dustin\Apps\weekend_app\www\lib\ng-lodash\build\ng-lodash.min.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Dustin\Apps\weekend_app\www\lib\ng-lodash\package.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/parser/directives/views/parser.view.html" afterPath="$PROJECT_DIR$/www/parser/directives/views/parser.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/parser/directives/navigationBar.directive.js" afterPath="$PROJECT_DIR$/www/parser/directives/navigationBar.directive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/parser/constants/noun.constants.js" afterPath="$PROJECT_DIR$/www/parser/constants/noun.constants.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/routes.js" afterPath="$PROJECT_DIR$/www/js/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/scenes/town/controllers/shrine.controller.js" afterPath="$PROJECT_DIR$/www/scenes/town/controllers/shrine.controller.js" />
     </list>
     <ignored path="weekend_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,47 +98,37 @@
         <entry file="file://$PROJECT_DIR$/www/parser/directives/navigationBar.directive.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navigation.view.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navigation.view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/parser/directives/views/navigation.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4789272">
+            <state vertical-scroll-proportion="-7.0">
               <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="actions.directive.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/parser/directives/actions.directive.js">
+      <file leaf-file-name="noun.constants.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/parser/constants/noun.constants.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+              <caret line="30" column="77" selection-start-line="30" selection-start-column="77" selection-end-line="30" selection-end-column="77" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="player.model.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/player/services/viewmodels/player.model.js">
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parser.view.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/parser/directives/views/parser.view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.153847">
-              <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.562701">
+              <caret line="100" column="26" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -130,8 +139,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Html5" />
         <option value="JavaScript File" />
+        <option value="Html5" />
       </list>
     </option>
   </component>
@@ -141,28 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/www/player/services/model/player.data.js" />
-        <option value="$PROJECT_DIR$/www/utility/utility.module.js" />
-        <option value="$PROJECT_DIR$/www/utility/directives/welcome.directive.js" />
-        <option value="$PROJECT_DIR$/www/parser/directives/parser.view.html" />
-        <option value="$PROJECT_DIR$/www/utility/directives/views/welcome.view.html" />
-        <option value="$PROJECT_DIR$/www/parser/directives/vies/parser.view.html" />
-        <option value="$PROJECT_DIR$/www/parser/services/parser.js" />
-        <option value="$PROJECT_DIR$/www/parser/services/pair.service.js" />
-        <option value="$PROJECT_DIR$/www/js/event.constants.js" />
-        <option value="$PROJECT_DIR$/www/parser/constants/nounConstants.js" />
-        <option value="$PROJECT_DIR$/www/parser/constants/verbConstants.js" />
-        <option value="$PROJECT_DIR$/www/parser/services/action.service.js" />
-        <option value="$PROJECT_DIR$/www/parser/constants/verb.constants.js" />
-        <option value="$PROJECT_DIR$/www/parser/constants/noun.constants.js" />
-        <option value="$PROJECT_DIR$/www/parser/services/tests/action-service-test.js" />
-        <option value="$PROJECT_DIR$/www/parser/services/tests/pair.service-test.js" />
-        <option value="$PROJECT_DIR$/www/player/services/viewmodels/tests/playerModel-test.js" />
-        <option value="$PROJECT_DIR$/www/parser/services/tests/parser.service-test.js" />
-        <option value="$PROJECT_DIR$/www/parser/services/parser.service.js" />
-        <option value="$PROJECT_DIR$/www/css/style.css" />
-        <option value="$PROJECT_DIR$/www/utility/services.js" />
         <option value="$PROJECT_DIR$/www/utility/services/modalMaker.js" />
         <option value="$PROJECT_DIR$/www/parser/parser.module.js" />
         <option value="$PROJECT_DIR$/www/scenes/town/controllers/views/look-shrine.view.html" />
@@ -175,10 +162,8 @@
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/www/characters/character.module.js" />
         <option value="$PROJECT_DIR$/www/scenes/town/services/models/shrine.data.js" />
-        <option value="$PROJECT_DIR$/www/js/routes.js" />
         <option value="$PROJECT_DIR$/www/scenes/town/controllers/views/shrine.view.html" />
         <option value="$PROJECT_DIR$/www/characters/services/modelviews/character.model.js" />
-        <option value="$PROJECT_DIR$/www/scenes/town/controllers/shrine.controller.js" />
         <option value="$PROJECT_DIR$/www/characters/services/models/character.data.js" />
         <option value="$PROJECT_DIR$/www/parser/directives/actions.directive.js" />
         <option value="$PROJECT_DIR$/www/parser/directives/navbar.directive.js" />
@@ -189,9 +174,33 @@
         <option value="$PROJECT_DIR$/www/parser/directives/travel.directive.js" />
         <option value="$PROJECT_DIR$/www/parser/directives/views/travel.view.html" />
         <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/parser/directives/navigationBar.directive.js" />
         <option value="$PROJECT_DIR$/www/parser/directives/views/parser.view.html" />
         <option value="$PROJECT_DIR$/www/parser/directives/views/navigation.view.html" />
+        <option value="$PROJECT_DIR$/www/parser/directives/navigationBar.directive.js" />
+        <option value="$PROJECT_DIR$/www/parser/constants/noun.constants.js" />
+        <option value="$PROJECT_DIR$/www/scenes/town/controllers/magiciansCorner.controller.js" />
+        <option value="$PROJECT_DIR$/www/scenes/town/controllers/shrine.controller.js" />
+        <option value="$PROJECT_DIR$/www/scenes/town/controllers/arena.controller.js" />
+        <option value="$PROJECT_DIR$/www/scenes/town/controllers/shop.controller.js" />
+        <option value="$PROJECT_DIR$/www/scenes/woods/controllers/bonfire.controller.js" />
+        <option value="$PROJECT_DIR$/www/scenes/woods/controllers/drownedSun.controller.js" />
+        <option value="$PROJECT_DIR$/www/scenes/woods/controllers/giantsInTheSky.controller.js" />
+        <option value="$PROJECT_DIR$/www/scenes/dungeon/controllers/lostPrincess.js" />
+        <option value="$PROJECT_DIR$/www/scenes/dungeon/controllers/dragonsLair.controller.js" />
+        <option value="$PROJECT_DIR$/www/scenes/dungeon/controllers/gate.controller.js" />
+        <option value="$PROJECT_DIR$/www/scenes/dungeon/controllers/lostPrincess.controller.js" />
+        <option value="$PROJECT_DIR$/www/scenes/woods/controllers/trees.controller.js" />
+        <option value="$PROJECT_DIR$/www/scenes/town/controllers/views/arena.view.html" />
+        <option value="$PROJECT_DIR$/www/scenes/town/controllers/views/magiciansCorner.view.html" />
+        <option value="$PROJECT_DIR$/www/scenes/town/controllers/views/shop.view.html" />
+        <option value="$PROJECT_DIR$/www/scenes/woods/services/bonfire.view.html" />
+        <option value="$PROJECT_DIR$/www/scenes/woods/controllers/views/drownedSun.view.html" />
+        <option value="$PROJECT_DIR$/www/scenes/woods/controllers/views/giantsInTheSky.view.html" />
+        <option value="$PROJECT_DIR$/www/scenes/woods/controllers/views/trees.view.html" />
+        <option value="$PROJECT_DIR$/www/scenes/dungeon/controllers/views/dragonsLair.view.html" />
+        <option value="$PROJECT_DIR$/www/scenes/dungeon/controllers/views/gate.view.html" />
+        <option value="$PROJECT_DIR$/www/scenes/dungeon/controllers/views/lostPrincess.view.html" />
+        <option value="$PROJECT_DIR$/www/js/routes.js" />
       </list>
     </option>
   </component>
@@ -208,10 +217,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="197" />
-    <option name="y" value="254" />
+    <option name="x" value="310" />
+    <option name="y" value="143" />
     <option name="width" value="1707" />
-    <option name="height" value="933" />
+    <option name="height" value="1007" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -304,7 +313,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="town" />
+              <option name="myItemId" value="dungeon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -326,7 +335,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="town" />
+              <option name="myItemId" value="dungeon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -348,121 +357,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="player" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weekend_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weekend_app" />
+              <option name="myItemId" value="scenes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
+              <option name="myItemId" value="dungeon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="player" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="viewmodels" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weekend_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weekend_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="player" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weekend_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weekend_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weekend_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weekend_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weekend_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weekend_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weekend_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weekend_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -484,11 +409,11 @@
       <recent name="C:\Users\Dustin\Apps\weekend_app\www\lib\ionic\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dustin\Apps\weekend_app\www\scenes\woods\controllers\views" />
       <recent name="C:\Users\Dustin\Apps\weekend_app\www\parser\directives" />
       <recent name="C:\Users\Dustin\Apps\weekend_app\www\parser\directives\views" />
       <recent name="C:\Users\Dustin\Apps\weekend_app\www\parser\controllers\views" />
       <recent name="C:\Users\Dustin\Apps\weekend_app\www\parser\directives\vies" />
-      <recent name="C:\Users\Dustin\Apps\weekend_app\www\items\constants" />
     </key>
   </component>
   <component name="RunManager">
@@ -545,7 +470,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="197" y="254" width="1707" height="933" extended-state="0" />
+    <frame x="310" y="143" width="1707" height="1007" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -557,7 +482,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25798213" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23570596" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -586,136 +511,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/items/constants/armorConstants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/items/constants/weaponConstants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4874552">
-          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/items/constants/shieldConstants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5483871">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/items/constants/inventoryConstants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/items/item.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/angular/.bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/angular-mocks/angular-mocks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/ionic/js/angular-sanitize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31111112">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/ionic/js/angular-sanitize.min.js.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/player/player.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/event.constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/parser/services/pair.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/player/services/viewmodels/tests/playerModel-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/parser/services/tests/action-service-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/parser/services/tests/pair.service-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/ionic.app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4455067">
-          <caret line="5322" column="2" selection-start-line="5322" selection-start-column="2" selection-end-line="5329" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/utility/directives/welcome.directive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -772,24 +567,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/parser/constants/noun.constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/utility/views/generic.modal.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1302682">
           <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/scenes/town/controllers/views/look-shrine.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="110" />
         </state>
       </provider>
     </entry>
@@ -870,20 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/scenes/town/controllers/shrine.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.3576643">
-          <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49635038">
-          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/player/services/viewmodels/player.model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -908,14 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/parser/directives/navigationBar.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/parser/directives/views/parser.view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.153847">
@@ -924,10 +683,224 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/event.constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18613139">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/parser/directives/views/navigation.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4789272">
+        <state vertical-scroll-proportion="-7.0">
           <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/parser/directives/navigationBar.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/parser/constants/noun.constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="77" selection-start-line="30" selection-start-column="77" selection-end-line="30" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/town/controllers/shrine.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10932476">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/dungeon/controllers/dragonsLair.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/dungeon/controllers/gate.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/dungeon/controllers/lostPrincess.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/town/controllers/arena.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="57" />
+          <folding>
+            <element signature="e#14#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/town/controllers/magiciansCorner.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="67" />
+          <folding>
+            <element signature="e#14#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/town/controllers/shop.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="56" />
+          <folding>
+            <element signature="e#14#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/woods/controllers/bonfire.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/woods/controllers/drownedSun.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/woods/controllers/giantsInTheSky.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/woods/controllers/trees.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/town/controllers/views/arena.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/town/controllers/views/magiciansCorner.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/town/controllers/views/look-shrine.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39932886">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/town/controllers/views/shop.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/woods/controllers/views/bonfire.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/woods/controllers/views/drownedSun.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/woods/controllers/views/giantsInTheSky.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/woods/controllers/views/trees.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/dungeon/controllers/views/dragonsLair.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/dungeon/controllers/views/gate.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scenes/dungeon/controllers/views/lostPrincess.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.562701">
+          <caret line="100" column="26" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
           <folding />
         </state>
       </provider>

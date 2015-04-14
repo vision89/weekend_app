@@ -5,15 +5,9 @@ angular.module( 'parser' ).directive( 'navigationBar', function () {
 
         restrice: 'E',
         templateUrl: 'parser/directives/views/navigation.view.html',
-        controller: ['$scope', 'playerModel', '$ionicSideMenuDelegate', function ( $scope, playerModel ) {
-
-            /**
-             * Toggle thetravel menu
-             */
-            $scope.toggleLeft = function() {
+        controller: ['$scope', 'playerModel', 'nounConstants', function ( $scope, playerModel, nounConstants ) {
 
 
-            };
 
         }]
 
