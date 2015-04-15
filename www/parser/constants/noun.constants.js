@@ -31,7 +31,8 @@ angular.module( 'parser' ).constant( 'nounConstants', function () {
         DRAGONS_LAIR:       { id: 14, text: 'Dragons Lair', parent: dungeonId, state: 'dragons_lair' },
 
         //Characters
-        PRIEST:             { id: 15, text: 'Priest' }
+        PRIEST:             { id: 15, text: 'Priest' },
+        MASTUS_GAMERATES:   { id: 16, text: 'Mastus Gamerates'}
 
     }
 

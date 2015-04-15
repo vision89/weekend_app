@@ -1,13 +1,17 @@
 'use strict';
 angular.module( 'characterMod' ).factory( 'characterModel', ['characterData', function ( characterData ) {
 
-    //Singleton
+    //New instance
     var service = {};
 
     service.data = characterData();
 
     service.loading = false;
 
+    /**
+     * Returns the characters associated with the location id
+     * @param id
+     */
     service.getCharacters = function ( id ) {
 
         service.loading = true; //This won't become important until we hook up to a db
@@ -18,7 +22,7 @@ angular.module( 'characterMod' ).factory( 'characterModel', ['characterData', fu
 
         });
 
-    }
+    };
 
     /**
      * Returns the parsed values needed by the modal after parsing
@@ -47,7 +51,7 @@ angular.module( 'characterMod' ).factory( 'characterModel', ['characterData', fu
 
         return undefined;
 
-    }
+    };
 
     return service;
 

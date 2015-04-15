@@ -36,7 +36,35 @@ angular.module( 'parser' ).factory( 'parse', ['pair', 'parserActions', function 
 
         return action;
 
-    }
+    };
+
+    /**
+     * Resets if you click the same noun twice, otherwise adds it
+     * @param noun
+     */
+    service.checkNoun = function ( noun ) {
+
+        if ( service.pair.noun === noun ) {
+
+            service.pair.noun = 0;
+
+        } else {
+
+            service.pair.noun = noun;
+
+        }
+
+    };
+
+    /**
+     * Resets the verb and noun to 0's
+     */
+    service.resetPair = function () {
+
+        service.pair.verb = 0;
+        service.pair.noun = 0;
+
+    };
 
     return service;
 

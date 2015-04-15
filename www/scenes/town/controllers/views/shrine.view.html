@@ -36,7 +36,7 @@
 
                 <div class="row">
 
-                    <img class="center-elm" src="{{::shrineModel.data.templateUrl}}" alt="" style="height:10%;width:10%;" />
+                    <img class="center-elm" src="scenes/town/assets/shrine.png" alt="" style="height:10%;width:10%;" />
 
                 </div>
 
@@ -57,32 +57,28 @@
         </div>
 
         <!-- display text related to each character -->
-        <span ng-if="characterService.data.characters.length > 0">
+        <div ng-repeat="character in characterService.data.characters" class="card  hover-card"
+             ng-click="cardClicked( character.noun.id )">
 
-            <div ng-repeat="character in characterService.data.characters" class="card  hover-card"
-                 ng-click="cardClicked( character.noun.id )">
+            <div class="item item-divider">
 
-                <div class="item item-divider">
+                {{::character.title}}
 
-                    {{::character.title}}
+            </div>
+
+            <div class="item item-text-wrap">
+
+                <div class="row">
+
+                    <img class="center-elm" ng-src="{{::character.templateUrl}}" alt="" style="height:10%;width:10%;" />
 
                 </div>
 
-                <div class="item item-text-wrap">
+                <div class="row text-center">
 
-                    <div class="row">
+                    <div class="padding">
 
-                        <img class="center-elm" ng-src="{{::character.templateUrl}}" alt="" style="height:10%;width:10%;" />
-
-                    </div>
-
-                    <div class="row text-center">
-
-                        <div class="padding">
-
-                            {{::character.description}}
-
-                        </div>
+                        {{::character.description}}
 
                     </div>
 
@@ -90,7 +86,7 @@
 
             </div>
 
-        </span>
+        </div>
 
     </div>
 

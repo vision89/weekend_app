@@ -9,6 +9,7 @@ angular.module( 'parser' ).factory( 'parserActions', [ 'verbConstants', 'nounCon
     return function () {
 
         var service = {};
+        var _nounConstants = nounConstants();
 
         /**
          * Look through each constant and if id is contained returned the string that describes it
@@ -55,7 +56,7 @@ angular.module( 'parser' ).factory( 'parserActions', [ 'verbConstants', 'nounCon
          */
         service.nounToString = function ( noun ) {
 
-            return _conToString( nounConstants, noun );
+            return _conToString( _nounConstants, noun );
 
         }
 

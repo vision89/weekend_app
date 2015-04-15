@@ -7,7 +7,9 @@
 angular.module( 'weekend_app' )
     .config( function ( $stateProvider, $urlRouterProvider ) {
 
-        $urlRouterProvider.otherwise('/')
+        var platform = ionic.Platform.platform().toLowerCase();    //Get the device platform
+
+        $urlRouterProvider.otherwise('/');
 
         $stateProvider.state( 'shrine', {
 
@@ -27,8 +29,12 @@ angular.module( 'weekend_app' )
 
                     return characterModel;
 
-                }]
+                }],
+                platform: function () {
 
+                    return platform;
+
+                }
             },
             onEnter: ['parse', function ( parse ) {
 
@@ -53,7 +59,36 @@ angular.module( 'weekend_app' )
 
             url: '/arena',
             templateUrl: 'scenes/town/controllers/views/arena.view.html',
-            controller: 'ArenaController'
+            controller: 'ArenaController',
+            resolve: {
+
+                characterService: ['characterModel', 'nounConstants', function ( characterModel, nounConstants ) {
+
+                    var _nounConstants = nounConstants();
+
+                    //Clear the characters then load them with shrine characters
+                    characterModel.data.characters = [];
+
+                    characterModel.getCharacters( _nounConstants.ARENA.id );
+
+                    return characterModel;
+
+                }],
+                platform: function () {
+
+                    return platform;
+
+                }
+
+            },
+            onEnter: ['parse', function ( parse ) {
+
+                parse.showLook =      true;
+                parse.showTake =      false;
+                parse.showAttack =    true;
+                parse.showTalk =      true;
+
+            }]
 
         }).state( 'magicians_corner', {
 

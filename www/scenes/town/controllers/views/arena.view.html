@@ -1,0 +1,87 @@
+<div class="bar bar-subheader bar-calm">
+
+    <span class="title font-size-150">
+
+        <b>
+
+            The Bloody Arena
+
+        </b>
+
+    </span>
+
+</div>
+
+<ion-content padding="true" class="padding-top text-center has-header has-footer font-size-125">
+
+    <div ng-class="{'web-card-layout': platform !== 'android' && platform !== 'ios'}" class="padding">
+
+        <!-- Arena Scenery -->
+        <div class="card hover-card" ng-click="cardClicked( nounConstants.ARENA.id )">
+
+            <div class="item item-divider">
+
+                The Arena
+
+            </div>
+
+            <div class="item item-text-wrap">
+
+                <div class="row">
+
+                    <img class="center-elm" src="scenes/town/assets/arena.png" alt="" style="height:10%;width:10%;" />
+
+                </div>
+
+                <div class="row text-center">
+
+                    <div class="padding">
+
+                        In the center of town a tall circular construction looms upwards.  Men stand around it having
+                        conversations.  Dilapidated pieces of the arena barely hang on.  Mold grows in the crevices and
+                        water has rotted many of the boards.  Many of the floors are lightly strained where streams of
+                        blood once slowly crawled.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- display text related to each character -->
+        <div ng-repeat="character in characterService.data.characters" class="card  hover-card"
+             ng-click="cardClicked( character.noun.id )">
+
+            <div class="item item-divider">
+
+                {{::character.title}}
+
+            </div>
+
+            <div class="item item-text-wrap">
+
+                <div class="row">
+
+                    <img class="center-elm" ng-src="{{::character.templateUrl}}" alt="" style="height:10%;width:10%;" />
+
+                </div>
+
+                <div class="row text-center">
+
+                    <div class="padding">
+
+                        {{::character.description}}
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</ion-content>

@@ -2,30 +2,21 @@
 /**
  * Town controller
  */
-angular.module( 'sceneMod' ).controller( 'ShrineController', ['$scope', 'playerModel', 'eventConstants', 'shrineModel',
-    'nounConstants', 'parse', 'modalMaker', 'verbConstants', 'characterService',
-    function ( $scope, playerModel, eventConstants, shrineModel, nounConstants, parse, modalMaker, verbConstants, characterService ) {
+angular.module( 'sceneMod' ).controller( 'ShrineController', ['$scope', 'playerModel', 'eventConstants', 'nounConstants',
+    'parse', 'modalMaker', 'verbConstants', 'characterService', 'platform',
+    function ( $scope, playerModel, eventConstants, nounConstants, parse, modalMaker, verbConstants, characterService, platform ) {
 
         //Service bindings
-        $scope.shrineModel = shrineModel;
         $scope.playerModel = playerModel;
         $scope.eventConstants = eventConstants;
-        $scope.platform = ionic.Platform.platform().toLowerCase();    //Get the device platform
+        $scope.platform = platform;    //Get the device platform
         $scope.nounConstants = nounConstants();
         $scope.characterService = characterService;
 
         //A card was clicked, we can let parse handle the event if it's ready
         $scope.cardClicked = function ( noun ) {
 
-            if ( parse.pair.noun === noun ) {
-
-                parse.pair.noun = 0;
-
-            } else {
-
-                parse.pair.noun = noun;
-
-            }
+            parse.checkNoun( noun );
 
         }
 
@@ -35,8 +26,7 @@ angular.module( 'sceneMod' ).controller( 'ShrineController', ['$scope', 'playerM
          */
         function _resetActions() {
 
-            parse.pair.verb = 0;
-            parse.pair.noun = 0;
+            parse.resetPair();
 
         }
 
