@@ -5,9 +5,21 @@ angular.module( 'parser' ).directive( 'navigationBar', function () {
 
         restrice: 'E',
         templateUrl: 'parser/directives/views/navigation.view.html',
-        controller: ['$scope', 'playerModel', 'nounConstants', function ( $scope, playerModel, nounConstants ) {
+        controller: ['$scope', 'playerModel', 'nounConstants', '$state', 'map', '$ionicSideMenuDelegate',
+            function ( $scope, playerModel, nounConstants, $state, map, $ionicSideMenuDelegate ) {
 
+            $scope.map = map;
 
+            /**
+             * Go to the selected location
+             * @param state
+             */
+            $scope.goTo = function ( state ) {
+
+                $state.go( state );
+                $ionicSideMenuDelegate.toggleLeft();
+
+            }
 
         }]
 

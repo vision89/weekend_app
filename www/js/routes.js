@@ -40,7 +40,7 @@ angular.module( 'weekend_app' )
 
                 //If we are leaving this controller and this is the first run, add the started event
                 //to the player model to prevent the welcome message from displaying again
-                if ( playerModel.containsId( playerModel.events, eventConstants.STARTED ) === false ) {
+                if ( playerModel.containsId( eventConstants.STARTED, playerModel.events ) === false ) {
 
                     playerModel.events.push( eventConstants.STARTED );
 

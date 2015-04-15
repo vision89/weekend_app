@@ -54,7 +54,20 @@
 
         <ion-content>
 
-            Hello
+            <ion-list>
+
+                <!-- show the list of locations -->
+                <ion-item ng-repeat="location in map.locations">
+
+                    <ion-item ng-repeat="child in location.children" ng-click="goTo( child.state )" >
+
+                        {{::location.noun.text}}: {{::child.text}}
+
+                    </ion-item>
+
+                </ion-item>
+
+            </ion-list>
 
         </ion-content>
 
