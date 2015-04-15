@@ -11,7 +11,7 @@ angular.module( 'sceneMod' ).controller( 'ShrineController', ['$scope', 'playerM
         $scope.playerModel = playerModel;
         $scope.eventConstants = eventConstants;
         $scope.platform = ionic.Platform.platform().toLowerCase();    //Get the device platform
-        $scope.nounConstants = nounConstants;
+        $scope.nounConstants = nounConstants();
         $scope.characterService = characterService;
 
         //A card was clicked, we can let parse handle the event if it's ready
@@ -66,15 +66,15 @@ angular.module( 'sceneMod' ).controller( 'ShrineController', ['$scope', 'playerM
         $scope.$on( 'ReadyToParse', function () {
 
             //Look at shrine
-            if ( parse.pair.verb === verbConstants.LOOK.id && parse.pair.noun === nounConstants.SHRINE.id ) {
+            if ( parse.pair.verb === verbConstants.LOOK.id && parse.pair.noun === $scope.nounConstants.SHRINE.id ) {
 
                 _displayGenericModal( 'Look at Shrine', 'The two empty blocks show no signs of abuse.  Whatever monoliths they held were moved quite carefully.' );
 
-            } else if ( parse.pair.verb === verbConstants.LOOK.id && parse.pair.noun === nounConstants.PRIEST.id ) {
+            } else if ( parse.pair.verb === verbConstants.LOOK.id && parse.pair.noun === $scope.nounConstants.PRIEST.id ) {
                 //Look Priest
 
                 //Get the parse values
-                var parsedValues = $scope.characterService.getParsedValues( verbConstants.LOOK.id, nounConstants.PRIEST.id );
+                var parsedValues = $scope.characterService.getParsedValues( verbConstants.LOOK.id, $scope.nounConstants.PRIEST.id );
 
                 //If there were any values display the modal
                 if ( !angular.isUndefined( parsedValues ) ) {
@@ -88,11 +88,11 @@ angular.module( 'sceneMod' ).controller( 'ShrineController', ['$scope', 'playerM
 
                 }
 
-            } else if ( parse.pair.verb === verbConstants.TALK.id && parse.pair.noun === nounConstants.PRIEST.id ) {
+            } else if ( parse.pair.verb === verbConstants.TALK.id && parse.pair.noun === $scope.nounConstants.PRIEST.id ) {
                 //Talk Priest
 
                 //Get the parse values
-                var parsedValues = $scope.characterService.getParsedValues( verbConstants.TALK.id, nounConstants.PRIEST.id );
+                var parsedValues = $scope.characterService.getParsedValues( verbConstants.TALK.id, $scope.nounConstants.PRIEST.id );
 
                 //If there were any values display the modal
                 if ( !angular.isUndefined( parsedValues ) ) {

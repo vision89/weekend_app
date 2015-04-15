@@ -5,6 +5,7 @@ angular.module( 'characterMod' ).factory( 'characterData', ['nounConstants', 've
     return function () {
 
         var service = {};
+        var _nounConstants = nounConstants();
 
         service.characters = [];
 
@@ -19,7 +20,7 @@ angular.module( 'characterMod' ).factory( 'characterData', ['nounConstants', 've
             'stare at the empty stones and mutter to himself before starting again.';
             character.title = 'The Priest';
             character.templateUrl = 'characters/assets/priest.png';
-            character.noun = nounConstants.PRIEST;
+            character.noun = _nounConstants.PRIEST;
             character.actions = [
                 {
                     verb: verbConstants.LOOK,
@@ -47,7 +48,7 @@ angular.module( 'characterMod' ).factory( 'characterData', ['nounConstants', 've
 
             switch( id ) {
 
-                case nounConstants.SHRINE:
+                case _nounConstants.SHRINE.id:
 
                     deferred.resolve( _makeShrineCharacters() );
                     break;

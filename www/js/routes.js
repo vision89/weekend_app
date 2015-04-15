@@ -18,10 +18,12 @@ angular.module( 'weekend_app' )
 
                 characterService: ['characterModel', 'nounConstants', function ( characterModel, nounConstants ) {
 
+                    var _nounConstants = nounConstants();
+
                     //Clear the characters then load them with shrine characters
                     characterModel.data.characters = [];
 
-                    characterModel.getCharacters( nounConstants.SHRINE );
+                    characterModel.getCharacters( _nounConstants.SHRINE.id );
 
                     return characterModel;
 
